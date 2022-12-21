@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Infrared Browser Showcases</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="./contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+      <a href="#top" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Demo</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="./contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+      <a href="#top" class="w3-bar-item w3-button w3-padding-large">Demo</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="top" class="w3-container w3-blue w3-center" style="padding:128px 16px">
+    <h1 class="w3-text">Infrared&nbsp;Browser&nbsp;Showcase</h1>
+    <h3 class="w3-text">For&nbsp;Companies</h3>
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <model-viewer style="margin:auto;" src="sample.glb" camera-controls shadow-intensity="1" exposure=".5" auto-rotate>
+      <div class="progress-bar" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+    </model-viewer>
+    <a href="./contact" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Contact</a>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>In The Browser</h1>
+        <h5 class="w3-padding-32">Allow customers enjoy the full experience, in the browser, developed and maintained by
+          the one the only Google.</h5>
+
+        <p class="w3-text-grey">The backend to the software used to create 3D models in the browser is developed and
+          maintained by Google&#8482;. The engine loads in a matter of seconds, and allows for normal 3D viewing, and
+          for mobile devices and VR's, AR viewing (Augmented reality (AR) is an interactive experience that combines the
+          real world and computer-generated content.) Augmented reality. (2022, December 19). In Wikipedia.
+        </p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i>
+      </div>
+
+      <div class="w3-twothird">
+        <h1>Generate Sales</h1>
+        <h5 class="w3-padding-32">Using 3D models on your website or app will give users a more immersive experience,
+          leading to more sales.</h5>
+
+        <p class="w3-text-grey">3D models and fancy graphics are great, everyone wants to be able to have some fun
+          while checking out their car they plan to buy, or their new watch that is being delivered. Imagine if you
+          could take it to a whole new level, and put the watch on your hand digitaly for a <strong>"test
+            drive"</strong>. Allowing users to feel immersed in your website / app will lead to more sales, and better
+          customer feedback.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <p>Powered by <a href="https://infrared.ga" target="_blank">Infrared Productions</a></p>
+    <p>Powered by <a href="https://developers.google.com" target="_blank">Google</a></p>
+  </footer>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
